@@ -22,7 +22,7 @@
 <div id="modal" class="modal"><div class="box"><h2 id="modalTitle">Ajouter</h2><form id="itemForm"></form></div></div>
 <script>
 const SUPABASE_URL="https://ihpqixjqtsjssinasmkr.supabase.co";
-const SUPABASE_PUBLISHABLE_KEY="PASTE_YOUR_PUBLISHABLE_KEY_HERE";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_TcMXWDCTS_QXDGOroISz2A_AAEcp-47";
 const db=supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 let myProfile=null,kind=null,itemId=null;
 const tables={films:{table:"films",label:"Film",fields:[["title","Titre","text"],["description","Description","area"],["image_url","URL affiche/image","text"],["video_url","URL vidéo","text"],["published","Publié","check"]]},projects:{table:"projects",label:"Projet",fields:[["title","Titre","text"],["description","Description","area"],["image_url","URL image","text"],["published","Publié","check"]]},photos:{table:"photos",label:"Photo",fields:[["title","Titre","text"],["description","Description","area"],["image_url","URL image","text"],["published","Publié","check"]]},videos:{table:"videos",label:"Vidéo",fields:[["title","Titre","text"],["description","Description","area"],["video_url","URL vidéo","text"],["thumbnail_url","URL miniature","text"],["published","Publié","check"]]},news:{table:"news",label:"Actualité",fields:[["title","Titre","text"],["content","Contenu","area"],["image_url","URL image","text"],["published","Publié","check"]]}};
